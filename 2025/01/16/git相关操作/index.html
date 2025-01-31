@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>git相关操作 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Git常用命令速查表      功能 命令 比喻    回退版本 git reset –参数 [提交的版本id] 用法在下面   查看工作区文件 ls    查看暂存区文件 git ls-files    查看提交历史 git log --oneline 以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快速浏览提交历史的场景。   查看git的所有操作（reset也有） git reflo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git相关操作">
+<meta property="og:url" content="http://example.com/2025/01/16/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Git常用命令速查表      功能 命令 比喻    回退版本 git reset –参数 [提交的版本id] 用法在下面   查看工作区文件 ls    查看暂存区文件 git ls-files    查看提交历史 git log --oneline 以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快速浏览提交历史的场景。   查看git的所有操作（reset也有） git reflo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2025/01/16/7o1D4plTuaci2FB.png">
+<meta property="og:image" content="https://s2.loli.net/2025/01/16/1x69elIzhJuOm3D.png">
+<meta property="og:image" content="https://s2.loli.net/2025/01/26/homS83kOceYxlA4.png">
+<meta property="og:image" content="https://s2.loli.net/2025/01/27/EoqaRyuV46BkWGm.png">
+<meta property="og:image" content="https://s2.loli.net/2025/01/27/uqOnLTNRbe8sMZi.png">
+<meta property="article:published_time" content="2025-01-15T18:47:51.000Z">
+<meta property="article:modified_time" content="2025-01-26T17:25:03.151Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2025/01/16/7o1D4plTuaci2FB.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-git相关操作" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/01/16/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/" class="article-date">
+  <time class="dt-published" datetime="2025-01-15T18:47:51.000Z" itemprop="datePublished">2025-01-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      git相关操作
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Git常用命令速查表"><a href="#Git常用命令速查表" class="headerlink" title="Git常用命令速查表"></a><strong>Git常用命令速查表</strong></h1><img src="https://s2.loli.net/2025/01/16/7o1D4plTuaci2FB.png" alt="image-20250116025006936" style="zoom:150%;" />
+
+<p><img src="https://s2.loli.net/2025/01/16/1x69elIzhJuOm3D.png" alt="image-20250116025030025"></p>
+<table>
+<thead>
+<tr>
+<th align="center">功能</th>
+<th align="center">命令</th>
+<th align="center">比喻</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">回退版本</td>
+<td align="center"><strong>git reset –参数 [提交的版本id]</strong></td>
+<td align="center">用法在下面</td>
+</tr>
+<tr>
+<td align="center">查看工作区文件</td>
+<td align="center"><strong>ls</strong></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">查看暂存区文件</td>
+<td align="center"><strong>git ls-files</strong></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">查看提交历史</td>
+<td align="center"><strong><code>git log --oneline</code></strong></td>
+<td align="center">以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快速浏览提交历史的场景。</td>
+</tr>
+<tr>
+<td align="center">查看git的所有操作（reset也有）</td>
+<td align="center"><strong>git reflog</strong></td>
+<td align="center">得到某个操作的id，配合git reset –hard 回到某个操作的时候</td>
+</tr>
+<tr>
+<td align="center">比较区，版本之间差异</td>
+<td align="center"><strong>git diff</strong></td>
+<td align="center">用法在下面</td>
+</tr>
+</tbody></table>
+<h1 id="git三区"><a href="#git三区" class="headerlink" title="git三区"></a>git三区</h1><h2 id="本地-–工作区"><a href="#本地-–工作区" class="headerlink" title="本地 –工作区"></a>本地 –工作区</h2><h2 id="add-–暂存区"><a href="#add-–暂存区" class="headerlink" title="add –暂存区"></a>add –暂存区</h2><h2 id="commit-–版本库"><a href="#commit-–版本库" class="headerlink" title="commit –版本库"></a>commit –版本库</h2><h1 id="HEAD"><a href="#HEAD" class="headerlink" title="HEAD"></a>HEAD</h1><p><strong>它指向分支的最新提交节点</strong></p>
+<h1 id="git文件状态"><a href="#git文件状态" class="headerlink" title="git文件状态"></a>git文件状态</h1><p><img src="https://s2.loli.net/2025/01/26/homS83kOceYxlA4.png" alt="屏幕截图 2025-01-25 231939"></p>
+<h2 id="Untrack"><a href="#Untrack" class="headerlink" title="Untrack"></a>Untrack</h2><p>指刚创建未被git管理的文件</p>
+<h2 id="Unmodified"><a href="#Unmodified" class="headerlink" title="Unmodified"></a>Unmodified</h2><p>指被git管理但为修改过的文件</p>
+<h2 id="Modified"><a href="#Modified" class="headerlink" title="Modified"></a>Modified</h2><p>指被git管理并且已修改但是未被添加到暂存区的文件</p>
+<h2 id="Staged"><a href="#Staged" class="headerlink" title="Staged"></a>Staged</h2><p>指已经修改后并添加到暂存区里的文件</p>
+<h1 id="git-reset"><a href="#git-reset" class="headerlink" title="git reset"></a>git reset</h1><p>用于日常中需要回退到之前的某一个版本的情形下，回退到之前某一个版本。</p>
+<p>下面三个例子都是在提交了三次commit的情况下分开执行，commit有序1，2，3。</p>
+<h2 id="git-reset-–soft-提交的版本id"><a href="#git-reset-–soft-提交的版本id" class="headerlink" title="git reset –soft [提交的版本id]"></a>git reset –soft [提交的版本id]</h2><p>让其回退到commit2，版本指向commit2，commit3记录消失，但是工作区和暂存区的文件没变，即失忆了，忘记后面的事，但做的事（文件）还在。</p>
+<h2 id="git-reset-–hard-提交的版本id"><a href="#git-reset-–hard-提交的版本id" class="headerlink" title="git reset –hard [提交的版本id]"></a>git reset –hard [提交的版本id]</h2><p>让其回退到commit2，真正的让其版本指向commit2的时候，工作区和暂存区在commit2后面的内容都被清空。</p>
+<h2 id="git-reset-–mixed-提交的版本id"><a href="#git-reset-–mixed-提交的版本id" class="headerlink" title="git reset (–mixed) [提交的版本id]"></a>git reset (–mixed) [提交的版本id]</h2><p>让其回退到commit2，版本指向commit2，工作区的关于commit2后面的还在，但是暂存区的已经清空。</p>
+<h1 id="git-diff"><a href="#git-diff" class="headerlink" title="git diff"></a>git diff</h1><p><img src="https://s2.loli.net/2025/01/27/EoqaRyuV46BkWGm.png" alt="image-20250127002755037"></p>
+<h2 id="git-diff-不加参数"><a href="#git-diff-不加参数" class="headerlink" title="git diff (不加参数)"></a>git diff (不加参数)</h2><p><strong>比较工作区和暂存区之间的差异</strong>，如下</p>
+<p><img src="https://s2.loli.net/2025/01/27/uqOnLTNRbe8sMZi.png" alt="image-20250127003045510"></p>
+<p>第一行表示被修改的文件，第二行后面10064是文件权限，红色表示删除内容，绿色表示新增的内容。</p>
+<h2 id="git-diff-HEAD"><a href="#git-diff-HEAD" class="headerlink" title="git diff HEAD"></a>git diff HEAD</h2><p><strong>比较工作区和版本库之间的差异</strong></p>
+<h2 id="git-diff-–cached"><a href="#git-diff-–cached" class="headerlink" title="git diff –cached"></a>git diff –cached</h2><p><strong>比较暂存区和版本库之间的差异</strong></p>
+<h2 id="git-diff-提交的版本id1-提交的版本id2"><a href="#git-diff-提交的版本id1-提交的版本id2" class="headerlink" title="git diff [提交的版本id1] [提交的版本id2]"></a>git diff [提交的版本id1] [提交的版本id2]</h2><p><strong>比较两个版本之间的差异</strong></p>
+<h2 id="git-diff-提交的版本id-HEAD"><a href="#git-diff-提交的版本id-HEAD" class="headerlink" title="git diff [提交的版本id] HEAD"></a>git diff [提交的版本id] HEAD</h2><p><strong>比较某个版本和当前最新版本之间的差异</strong></p>
+<h2 id="git-diff-HEAD-数字-HEAD"><a href="#git-diff-HEAD-数字-HEAD" class="headerlink" title="git diff HEAD~[数字] HEAD"></a>git diff HEAD~[数字] HEAD</h2><p><strong>比较上一(数字代表前几个版本)个版本和当前最新版本之间的差异</strong></p>
+<p><strong>还可以在后面加[文件名]表示只比较某个文件的差异内容</strong></p>
+<p><strong>也可以查看两个分支之间的差异</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/01/16/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/" data-id="cm6jmvq1m0000qggza73u0l3g" data-title="git相关操作" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2025/01/12/Linux%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Linux相关操作</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux%E4%BB%8B%E7%BB%8D/" rel="tag">Linux介绍</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux%E5%91%BD%E4%BB%A4/" rel="tag">Linux命令</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Linux%E4%BB%8B%E7%BB%8D/" style="font-size: 10px;">Linux介绍</a> <a href="/tags/Linux%E5%91%BD%E4%BB%A4/" style="font-size: 10px;">Linux命令</a> <a href="/tags/git/" style="font-size: 10px;">git</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/01/">January 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/01/16/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/">git相关操作</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/12/Linux%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/">Linux相关操作</a>
+          </li>
+        
+          <li>
+            <a href="/2025/01/07/hexo/">hexo相关操作</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
