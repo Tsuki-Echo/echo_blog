@@ -118,6 +118,11 @@
 <td align="center"></td>
 </tr>
 <tr>
+<td align="center">查看本地版本库文件</td>
+<td align="center"><strong><code>git ls-tree</code></strong></td>
+<td align="center">列出指定提交或分支中的文件和文件夹。</td>
+</tr>
+<tr>
 <td align="center">查看提交历史</td>
 <td align="center"><strong><code>git log --oneline</code></strong></td>
 <td align="center">以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快速浏览提交历史的场景。</td>
@@ -131,6 +136,16 @@
 <td align="center">比较区，版本之间差异</td>
 <td align="center"><strong>git diff</strong></td>
 <td align="center">用法在下面</td>
+</tr>
+<tr>
+<td align="center">获取远程仓库的修改（变化）</td>
+<td align="center"><strong>git fetch</strong></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">列出所有未被 Git 跟踪的文件</td>
+<td align="center"><strong><code>git ls-files --others --exclude-standard</code></strong></td>
+<td align="center"></td>
 </tr>
 </tbody></table>
 <h1 id="git三区"><a href="#git三区" class="headerlink" title="git三区"></a>git三区</h1><h2 id="本地-–工作区"><a href="#本地-–工作区" class="headerlink" title="本地 –工作区"></a>本地 –工作区</h2><h2 id="add-–暂存区"><a href="#add-–暂存区" class="headerlink" title="add –暂存区"></a>add –暂存区</h2><h2 id="commit-–版本库"><a href="#commit-–版本库" class="headerlink" title="commit –版本库"></a>commit –版本库</h2><h1 id="HEAD"><a href="#HEAD" class="headerlink" title="HEAD"></a>HEAD</h1><p><strong>它指向分支的最新提交节点</strong></p>
@@ -155,6 +170,7 @@
 <h2 id="git-diff-HEAD-数字-HEAD"><a href="#git-diff-HEAD-数字-HEAD" class="headerlink" title="git diff HEAD~[数字] HEAD"></a>git diff HEAD~[数字] HEAD</h2><p><strong>比较上一(数字代表前几个版本)个版本和当前最新版本之间的差异</strong></p>
 <p><strong>还可以在后面加[文件名]表示只比较某个文件的差异内容</strong></p>
 <p><strong>也可以查看两个分支之间的差异</strong></p>
+<p><img src="https://s2.loli.net/2025/01/27/9bWyZKdsDSaP4YX.png" alt="image-20250127012524706"></p>
 
       
     </div>

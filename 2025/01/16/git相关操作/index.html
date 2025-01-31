@@ -6,20 +6,21 @@
   
   <title>git相关操作 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Git常用命令速查表      功能 命令 比喻    回退版本 git reset –参数 [提交的版本id] 用法在下面   查看工作区文件 ls    查看暂存区文件 git ls-files    查看提交历史 git log --oneline 以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快速浏览提交历史的场景。   查看git的所有操作（reset也有） git reflo">
+  <meta name="description" content="Git常用命令速查表      功能 命令 比喻    回退版本 git reset –参数 [提交的版本id] 用法在下面   查看工作区文件 ls    查看暂存区文件 git ls-files    查看本地版本库文件 git ls-tree 列出指定提交或分支中的文件和文件夹。   查看提交历史 git log --oneline 以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git相关操作">
 <meta property="og:url" content="http://example.com/2025/01/16/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Git常用命令速查表      功能 命令 比喻    回退版本 git reset –参数 [提交的版本id] 用法在下面   查看工作区文件 ls    查看暂存区文件 git ls-files    查看提交历史 git log --oneline 以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快速浏览提交历史的场景。   查看git的所有操作（reset也有） git reflo">
+<meta property="og:description" content="Git常用命令速查表      功能 命令 比喻    回退版本 git reset –参数 [提交的版本id] 用法在下面   查看工作区文件 ls    查看暂存区文件 git ls-files    查看本地版本库文件 git ls-tree 列出指定提交或分支中的文件和文件夹。   查看提交历史 git log --oneline 以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://s2.loli.net/2025/01/16/7o1D4plTuaci2FB.png">
 <meta property="og:image" content="https://s2.loli.net/2025/01/16/1x69elIzhJuOm3D.png">
 <meta property="og:image" content="https://s2.loli.net/2025/01/26/homS83kOceYxlA4.png">
 <meta property="og:image" content="https://s2.loli.net/2025/01/27/EoqaRyuV46BkWGm.png">
 <meta property="og:image" content="https://s2.loli.net/2025/01/27/uqOnLTNRbe8sMZi.png">
+<meta property="og:image" content="https://s2.loli.net/2025/01/27/9bWyZKdsDSaP4YX.png">
 <meta property="article:published_time" content="2025-01-15T18:47:51.000Z">
-<meta property="article:modified_time" content="2025-01-26T17:25:03.151Z">
+<meta property="article:modified_time" content="2025-01-31T16:32:36.600Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -127,6 +128,11 @@
 <td align="center"></td>
 </tr>
 <tr>
+<td align="center">查看本地版本库文件</td>
+<td align="center"><strong><code>git ls-tree</code></strong></td>
+<td align="center">列出指定提交或分支中的文件和文件夹。</td>
+</tr>
+<tr>
 <td align="center">查看提交历史</td>
 <td align="center"><strong><code>git log --oneline</code></strong></td>
 <td align="center">以一行的简洁方式展示提交历史，每个提交记录占据一行，适合快速浏览提交历史的场景。</td>
@@ -140,6 +146,16 @@
 <td align="center">比较区，版本之间差异</td>
 <td align="center"><strong>git diff</strong></td>
 <td align="center">用法在下面</td>
+</tr>
+<tr>
+<td align="center">获取远程仓库的修改（变化）</td>
+<td align="center"><strong>git fetch</strong></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">列出所有未被 Git 跟踪的文件</td>
+<td align="center"><strong><code>git ls-files --others --exclude-standard</code></strong></td>
+<td align="center"></td>
 </tr>
 </tbody></table>
 <h1 id="git三区"><a href="#git三区" class="headerlink" title="git三区"></a>git三区</h1><h2 id="本地-–工作区"><a href="#本地-–工作区" class="headerlink" title="本地 –工作区"></a>本地 –工作区</h2><h2 id="add-–暂存区"><a href="#add-–暂存区" class="headerlink" title="add –暂存区"></a>add –暂存区</h2><h2 id="commit-–版本库"><a href="#commit-–版本库" class="headerlink" title="commit –版本库"></a>commit –版本库</h2><h1 id="HEAD"><a href="#HEAD" class="headerlink" title="HEAD"></a>HEAD</h1><p><strong>它指向分支的最新提交节点</strong></p>
@@ -164,6 +180,7 @@
 <h2 id="git-diff-HEAD-数字-HEAD"><a href="#git-diff-HEAD-数字-HEAD" class="headerlink" title="git diff HEAD~[数字] HEAD"></a>git diff HEAD~[数字] HEAD</h2><p><strong>比较上一(数字代表前几个版本)个版本和当前最新版本之间的差异</strong></p>
 <p><strong>还可以在后面加[文件名]表示只比较某个文件的差异内容</strong></p>
 <p><strong>也可以查看两个分支之间的差异</strong></p>
+<p><img src="https://s2.loli.net/2025/01/27/9bWyZKdsDSaP4YX.png" alt="image-20250127012524706"></p>
 
       
     </div>
